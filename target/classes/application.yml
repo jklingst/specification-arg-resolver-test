@@ -1,0 +1,24 @@
+# No banner
+spring:
+  main:
+    banner-mode: off
+
+  # JPA/SQL logging
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test
+    username: sa
+#  jpa:
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+
+# OpenAPI
+openapi:
+  name: specification-arg-resolver-test
+  title: SpecificationArgResolver Test
+  version: '0.0.1-SNAPSHOT'
